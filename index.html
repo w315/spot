@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Spot | Surfing school</title>
+	<meta name="description" content="description">
+	<meta name="keywords" content="keywords">
+	<!-- OG Tags -->
+	<meta property="og:title" content="title">
+	<meta property="og:description" content="description">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="image">
+	<meta property="og:site_name" content="title">
+	<!-- Styling -->
+	<meta name="theme-color" content="color">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/Favicon.png">
+	<!-- Fonts, swiper slider, CSS, AOS(animation) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230131133843" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap&_v=20230131133843" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230131133843" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230131133843">
+</head>
+
+<body>
+	<header class="header" id="header">
+	<div class="container">
+		<div class="heder__nav_wrapper">
+			<nav class="header__nav" id="header__nav">
+				<img src="img/logo.svg" alt="spot" class="header__logo">
+				<ul class="header__navigation">
+					<li class="header__navigation_item">
+						<a href="#" class="header__navigation_link">
+							About
+						</a>
+					</li>
+					<li class="header__navigation_item">
+						<a href="#" class="header__navigation_link">
+							Offers
+						</a>
+					</li>
+					<li class="header__navigation_item">
+						<a href="#" class="header__navigation_link">
+							places
+						</a>
+					</li>
+					<li class="header__navigation_item">
+						<a href="#" class="header__navigation_link">
+							reviews
+						</a>
+					</li>
+				</ul>
+				<ul class="header__social">
+					<li class="header__social_item">
+						<!--noindex-->
+						<a href="#" rel="nofollow noopener noreferrer" target="_blank" class="header__social_link">
+							<img src="img/instagram.svg" alt="instagram">
+						</a>
+						<!--/noindex-->
+					</li>
+					<li class="header__social_item">
+						<!--noindex-->
+						<a href="#" rel="nofollow noopener noreferrer" target="_blank" class="header__social_link">
+							<img src="img/facebook.svg" alt="facebook">
+						</a>
+						<!--/noindex-->
+					</li>
+					<li class="header__social_item">
+						<!--noindex-->
+						<a href="#" rel="nofollow noopener noreferrer" target="_blank" class="header__social_link">
+							<img src="img/tripadvisor.svg" alt="tripadvisor">
+						</a>
+						<!--/noindex-->
+					</li>
+				</ul>
+				<div class="header__burger">
+					<button class="header__burger_btn" aria-label="Open menu" aria-expanded="false">
+						<span class="header__burger_line line-top"></span>
+						<span class="header__burger_line line-center"></span>
+						<span class="header__burger_line line-bot"></span>
+					</button>
+				</div>
+			</nav>
+		</div>
+		<div class="header__offer" data-aos="fade-down">
+			<p class="header__offer_text">
+				Spot - surf, work, rest
+			</p>
+			<h1 class="header__offer_title">
+				Good times & amazing experience
+			</h1>
+			<button class="header__offer_btn btn">
+				book now
+			</button>
+		</div>
+	</div>
+	<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1"
+		xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+				<stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+				<stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+			</linearGradient>
+		</defs>
+		<path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+			d="M0,30L60,47.5C120,65,240,100,360,117.5C480,135,600,135,720,117.5C840,100,960,65,1080,60C1200,55,1320,80,1440,80C1560,80,1680,55,1800,37.5C1920,20,2040,10,2160,12.5C2280,15,2400,30,2520,45C2640,60,2760,75,2880,77.5C3000,80,3120,70,3240,57.5C3360,45,3480,30,3600,40C3720,50,3840,85,3960,100C4080,115,4200,110,4320,102.5C4440,95,4560,85,4680,70C4800,55,4920,35,5040,22.5C5160,10,5280,5,5400,22.5C5520,40,5640,80,5760,100C5880,120,6000,120,6120,110C6240,100,6360,80,6480,77.5C6600,75,6720,90,6840,90C6960,90,7080,75,7200,62.5C7320,50,7440,40,7560,47.5C7680,55,7800,80,7920,90C8040,100,8160,95,8280,85C8400,75,8520,60,8580,52.5L8640,45L8640,150L8580,150C8520,150,8400,150,8280,150C8160,150,8040,150,7920,150C7800,150,7680,150,7560,150C7440,150,7320,150,7200,150C7080,150,6960,150,6840,150C6720,150,6600,150,6480,150C6360,150,6240,150,6120,150C6000,150,5880,150,5760,150C5640,150,5520,150,5400,150C5280,150,5160,150,5040,150C4920,150,4800,150,4680,150C4560,150,4440,150,4320,150C4200,150,4080,150,3960,150C3840,150,3720,150,3600,150C3480,150,3360,150,3240,150C3120,150,3000,150,2880,150C2760,150,2640,150,2520,150C2400,150,2280,150,2160,150C2040,150,1920,150,1800,150C1680,150,1560,150,1440,150C1320,150,1200,150,1080,150C960,150,840,150,720,150C600,150,480,150,360,150C240,150,120,150,60,150L0,150Z">
+		</path>
+	</svg>
+</header>
+	<section class="way section-padding" id="way">
+	<div class="container">
+		<h2 class="way__title h2-title" data-aos="fade-down">
+			Spot's way of life
+		</h2>
+		<div class="way__wrapper">
+			<div class="way__item">
+				<div class="way__content" data-aos="fade-right">
+					<h3 class="way__content_title h3-title">
+						Lifestyle
+					</h3>
+					<p class="way__content_text">
+						At Spot, we’re all about turning our passion for surfing into unforgettable adventures. Our surf
+						trips are one-of-a-kind, as we mix surfing with
+						bucket-list experiences, social activities and local flavour
+					</p>
+					<p class="way__content_text">
+						We believe surfing is more than a sport – it’s a lifestyle – and we want you to experience it at
+						some of the most beautiful surf destinations across
+						the planet. And in the end, we want you to be left not only with
+						better surf skills, but also memories for life, new friends and
+						a feeling that every day should be like this.
+					</p>
+				</div>
+				<div class="way__card_1" data-aos="fade-left"></div>
+			</div>
+			<div class="way__item way__item_2">
+				<div class="way__card_2" data-aos="fade-right"></div>
+				<div class="way__content" data-aos="fade-left">
+					<h3 class="way__content_title h3-title">
+						Surfing - the best sport in the world
+					</h3>
+					<p class="way__content_text">
+						We love sharing our passion for surfing, as we truly believe it’s the best sport in the world!
+						Surfing gives you an incredible feeling of freedom and triggers real stoke that keeps you happy
+						all
+						throughout the day!
+					</p>
+					<p class="way__content_text">
+						Connecting with the ocean, being immersed in the moment and embracing outdoor living are other
+						things we just love about it. You also get a true sense of belonging through a tight-knit
+						community.
+						Surfing is such a supportive and social sport – we’re all about cheering each other on and
+						catching
+						waves of good times!
+					</p>
+				</div>
+			</div>
+			<div class="way__item">
+				<div class="way__content" data-aos="fade-right">
+					<h3 class="way__content_title h3-title">
+						Fuel your wanderlust
+					</h3>
+					<p class="way__content_text">
+						We love exploring the beautiful planet we call home, and wanderlust has led us to some of the
+						best
+						experiences in our life. We’ve seen incredible places and had some unforgettable adventures, but
+						it’s also so much more than that.
+					</p>
+					<p class="way__content_text">
+						Travelling lets you connect with people from all over the world, makes you more open-minded,
+						fuels
+						your imagination, changes your perspectives for the better, and gives you some real thrills and
+						goosebumps-worthy moments. We truly believe travelling is the only thing you can buy that makes
+						you
+						richer.
+					</p>
+				</div>
+				<div class="way__card_3" data-aos="fade-left"></div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="offer section-padding">
+	<div class="container">
+		<h2 class="h2-title offer__title" data-aos="fade-down">
+			What we offer
+		</h2>
+		<div class="offer__wrap">
+			<div class="offer__wrapper" data-aos="flip-up">
+				<div class="offer__card">
+					<div class="offer__front_1">
+						<h3 class="offer__front_title h3-title">
+							Lessons
+						</h3>
+					</div>
+					<div class="offer__back">
+						<p class="offer__text">
+							Students will be taught water safety techniques and ocean environmental education training
+							with our dedicated staff. We provide a range of surf curses, just pick one, and let's go!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="offer__wrapper" data-aos="flip-up">
+				<div class="offer__card">
+					<div class="offer__front_2">
+						<h3 class="offer__front_title h3-title">
+							Hotels
+						</h3>
+					</div>
+					<div class="offer__back">
+						<p class="offer__text">
+							Surf Holidays ? Profit of our special SURF & HOTELS packages. You'll have all what you need
+							with private conveniences. Your only matter will be to catch that next waves !
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="offer__wrapper" data-aos="flip-up">
+				<div class="offer__card">
+					<div class="offer__front_3">
+						<h3 class="offer__front_title h3-title">
+							Rentals
+						</h3>
+					</div>
+					<div class="offer__back">
+						<p class="offer__text">
+							Need a Board ? We have one for you !
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+	<section class="place section-padding">
+	<div class="container">
+		<h2 class="h2-title place__title" data-aos="fade-down">
+			Choose a place that you like
+		</h2>
+		<div class="place__slider swiper">
+			<div class="swiper-wrapper">
+				<div class="palce__card palce__card_1 swiper-slide">
+					<img src="img/pace-icon-1.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						Portugal
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+				<div class="palce__card palce__card_2 swiper-slide">
+					<img src="img/pace-icon-2.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						Pipeline
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+				<div class="palce__card palce__card_3 swiper-slide">
+					<img src="img/pace-icon-3.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						Supertubes
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+				<div class="palce__card palce__card_4 swiper-slide">
+					<img src="img/pace-icon-4.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						Teahupo'o
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+				<div class="palce__card palce__card_5 swiper-slide">
+					<img src="img/pace-icon-5.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						Maverick's
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+				<div class="palce__card palce__card_6 swiper-slide">
+					<img src="img/pace-icon-6.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						Morocco
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+				<div class="palce__card palce__card_7 swiper-slide">
+					<img src="img/pace-icon-7.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						California
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+				<div class="palce__card palce__card_8 swiper-slide">
+					<img src="img/pace-icon-8.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						Barbados
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+				<div class="palce__card palce__card_9 swiper-slide">
+					<img src="img/pace-icon-9.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						Mexico
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+				<div class="palce__card palce__card_10 swiper-slide">
+					<img src="img/pace-icon-10.svg" alt="" class="place__icon">
+					<h3 class="palce__card_title h2-title">
+						Norway
+					</h3>
+					<span class="place__card_text">
+						surf camp
+					</span>
+				</div>
+			</div>
+			<div class="swiper-button-prev arrow"></div>
+			<div class="swiper-button-next arrow"></div>
+		</div>
+	</div>
+</section>
+	<section class="reviews section-padding">
+	<div class="container">
+		<h2 class="h2-title reviews-title" data-aos="fade-down">
+			Reviews
+		</h2>
+		<div class="reviews-slider swiper">
+			<div class="swiper-wrapper reviews__wrapp">
+				<div class="reviews__card swiper-slide" data-aos="flip-up">
+					<div class="reviews__customer">
+						<div class="reviews__customer_top">
+							<picture><source srcset="img/photo-reviews-1.webp" type="image/webp"><img src="img/photo-reviews-1.png" alt="Barbara" class="reviews__customer_photo"></picture>
+							<div class="reviews__customer_info">
+								<h3 class="reviews__customer_name h3-title">
+									Barbara
+								</h3>
+								<div class="reviews__customer_stars">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__customer_bot">
+							<p class="reciwes__customer_text">
+								My husband and I, we super love this experience! We never ever stay on surf before
+								and
+								the friendly stuff, the instructors attention, very good advices and care they provide
+								help us
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__card swiper-slide" data-aos="flip-up">
+					<div class="reviews__customer">
+						<div class="reviews__customer_top">
+							<picture><source srcset="img/photo-reviews-2.webp" type="image/webp"><img src="img/photo-reviews-2.png" alt="Marta" class="reviews__customer_photo"></picture>
+							<div class="reviews__customer_info">
+								<h3 class="reviews__customer_name h3-title">
+									Marta
+								</h3>
+								<div class="reviews__customer_stars">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__customer_bot">
+							<p class="reciwes__customer_text">
+								We booked the week surf camp and had a phenomenal experience. We had 5 days of surfing
+								with the best coaches. The whole team was supportive and encouraging while providing
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__card swiper-slide" data-aos="flip-up">
+					<div class="reviews__customer">
+						<div class="reviews__customer_top">
+							<picture><source srcset="img/photo-reviews-3.webp" type="image/webp"><img src="img/photo-reviews-3.png" alt="Tomas" class="reviews__customer_photo"></picture>
+							<div class="reviews__customer_info">
+								<h3 class="reviews__customer_name h3-title">
+									Tomas
+								</h3>
+								<div class="reviews__customer_stars">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+									<img src="img/star.svg" alt="star" class="reviews__customer_star">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__customer_bot">
+							<p class="reciwes__customer_text">
+								My husband and I, we super love this experience! We never ever stay on surf before
+								and
+								the friendly stuff, the instructors attention, very good advices and care they provide
+								help us
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="quote">
+	<div class="container">
+		<div class="quote-wrapper" data-aos="fade-left">
+			<h2 class="quote-title">
+				The beach is our home. We are leaving it better than we found it.
+			</h2>
+			<p class="quote-text">
+				We have made a commitment to our ocean, beaches and community. They are our playground, our home and our
+				livelihood. We are going to leave them better than we found them. That means that all our employees,
+				friends and guests helps out with recycling and taking other actions for the environment. Each week
+				there are beach cleaning and recycling activities to ensure that our home stays the way it was supposed
+				to be.
+			</p>
+			<picture><source srcset="img/signature-quote.webp" type="image/webp"><img src="img/signature-quote.png" alt="signature" class="quote-signature"></picture>
+			<span>Spot crew</span>
+		</div>
+	</div>
+</section>
+	<footer class="footer" data-aos="fade-down">
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="navigation">
+				<h3 class="navigation__title h3-title">
+					Navigation
+				</h3>
+				<ul class="navigation__menu">
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">About</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Offers</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Places</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Reviews</a>
+					</li>
+				</ul>
+			</div>
+			<div class="social">
+				<h3 class="social__title h3-title">
+					Follow us!
+				</h3>
+				<ul class="social__menu">
+					<li class="social__item">
+						<img src="img/instagram-2.svg" alt="inst" class="social__img" rel="nofollow" target="_blank">
+						<!--noindex-->
+						<a href="#" class="scial__link">Instagram</a>
+						<!--/noindex-->
+					</li>
+					<li class="social__item">
+						<img src="img/facebook-2.svg" alt="facebook" class="social__img" rel="nofollow"
+							target="_blank">
+						<!--noindex-->
+						<a href="#" class="scial__link">Facebook</a>
+						<!--/noindex-->
+					</li>
+				</ul>
+			</div>
+			<div class="contact">
+				<h3 class="contct__title h3-title">
+					Contact us
+				</h3>
+				<ul class="contact__menu">
+					<li class="contact__item">
+						<a href="tel:+380682064933" class="contact__lick">Phone number: +46 188 008 125</a>
+					</li>
+					<li class="contact__item">
+						<!--noindex-->
+						<a aria-label="Chat on WhatsApp" href="https://wa.me/+380682064933" target="_blank"
+							rel="nofollow">
+							WhatsApp: +47 572 108 000
+						</a>
+						<!--/noindex-->
+					</li>
+					<li class="contact__item">
+						<span>We're closed in the weekends.</span>
+					</li>
+				</ul>
+				<button class="contact__btn btn">contact us</button>
+			</div>
+		</div>
+	</div>
+</footer>
+	<!-- AOS(anomation) -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20230131133843"></script>
+	<!-- slider swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230131133843"></script>
+	<!-- my scripts -->
+	<script src="js/app.min.js?_v=20230131133843"></script>
+</body>
+
+</html>
